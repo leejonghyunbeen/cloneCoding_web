@@ -1,0 +1,59 @@
+/* 페이지 제목 글자크기 = 18px
+    페이지 부제목 글자 크기 = 16px
+    페이지 경로 = 11px
+    본문 강조 내용 = 28px
+    본문 내용 = 12px */
+main {}
+main .title {}
+main .title h1 {font-size: 1.125rem;}
+main .title .path {}
+main .title .path dd {font-size: 0.688rem;}
+main .title .path dd img {}
+main .title .path dd em {
+    font-size: 0.688rem;
+    font-weight: 500;
+}
+main .content {}
+main .content h2 {
+    color: #1e61a8;
+    font-weight: 700;
+}
+main .content h2 img {}
+main .content .first {
+    font-size: 1.75rem; 
+    line-height:1.4 ;
+}
+main .content .first em {color: #1f9b0f ; font-size: 1.75rem;}
+main .content p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+
+h1 {}
+header {}
+header h1 {}
+header form {}
+header form input {}
+.box {}
+.box a {}
+.box a span {}
+.box .contents {}
+.box .contents p {}
+.img {}
+.img img {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

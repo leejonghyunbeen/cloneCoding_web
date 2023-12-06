@@ -5,7 +5,11 @@
     본문 내용 = 12px */
 main {width: 850px;
     border: 1px solid #ddd; 
-    margin: 100px 0 0 50px;}
+    margin: 100px 0 0 50px;
+    background-image: url(../images/bg.png);
+    background-repeat:no-repeat ;
+    background-position: right, top;
+}
 main .title {}
 main .title h1 {font-size: 1.125rem;}
 main .title_path {border-bottom:1px solid #ddd ;

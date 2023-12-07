@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/seoul.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="first">
+            <nav>
+                <a href="#"><img src="./images/sprite/seoul.png " alt="서울특별시"></a>
+                <a href="#">서울소식</a>
+                <a href="#">시민참여</a>
+                <a href="#">분야별정보</a>
+                <a href="#">서울소개</a>
+                <a href="#">부서안내</a>
+                <a href="#">정보공개</a>
+                <a href="#">응답소</a>
+            </nav>
+            <div class="mypage">
+                <a href="#">로그인</a>
+                <a href="#">나의우편</a>
+                <a href="#">전자우편</a>
+            </div>
+        </div>
+        <div class="last">
+            <div class="left">
+                <h1><a href="#"><img src="./images/sprite/logo_black.png" alt="서울특별시"></a></h1>
+                <form action="#" id="search" method="get">
+                    <fieldset>
+                        <legend class="skip">search</legend>
+                        <input type="search" placeholder="검색어를 입력해 주세요" name="user_search" id="user_search">
+                        <button type="submit"><img src="./images/sprite/search.png" alt="이미지"></button>
+                    </fieldset> 
+                </form>
+            </div>
+            <div class="right">
+                <form action="#" id="lang">
+                    <fieldset>
+                        <legend class="sikp">언어양식</legend>
+                        <select name="list">
+                            <option value="en">english</option>
+                            <option value="jp">japanese</option>
+                            <option value="ch">chinese</option>
+                        </select>
+                        <button type="submit">go</button>
+                    </fieldset>
+                </form>
+                <div class="weather">
+                    <p class="current_weather">27.5℃</p>
+                    <p>미세먼지(좋음) 초미세먼지(보통)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 1행 코로나 배너, 교통정보 안내 -->
+        <section class="visual">
+            <div class="left">
+                <a href="#"><img src="./images/banner_main.jpg" alt="사회적 거리두리 2단계 격상 8월 16일부터 코로나19를 멈추기 위해 ㄷ우리도 잠시 뭠춰요 외출자제,마스크 착용,손씻기,거리두기2m"></a>
+                <a href="#" class="close">X닫기</a>
+            </div>
+            <div class="right">
+                <a href="#" class="corona">
+                    <img src="./images/bg_corona.gif" alt="코로나 19현황 발생동향 전체보기">
+                    <span class="date">20.08.18.00시 기준</span>
+                    <span class="data" title="확진자">2,209</span>
+                    <span class="data" title="추가 확진자">132</span>
+                    <span class="data" title="퇴원">1,573</span>
+                    <span class="data" title="추가 퇴원">2</span>
+                    <span class="data" title="사망">14</span>
+                </a>
+                <a href="#"><img src="./images/banner_traffic.gif" alt="서울시 실시간 교통정보"></a>
+            </div>
+        </section>
+        <!-- 2행 주요서비스 -->
+        <section class="service">
+            <div class="title">
+                <h1>주요서비스</h1>
+                <a href="#" class="site">전체 사이트</a>
+            </div>
+            <div class="contents">
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_01.png" alt="">
+                    <span>응답소(민원신고)</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_02.png" alt="">
+                    <span>민주주의서울</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_03.png" alt="">
+                    <span>서울일자리</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_04.png" alt="">
+                    <span>평생학습포털</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_05.png" alt="">
+                    <span>우리동네키움포털</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_06.png" alt="">
+                    <span>부동산정보</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_07.png" alt="">
+                    <span>공공서비스예약</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_08.png" alt="">
+                    <span>서울관광</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_09.png" alt="">
+                    <span>서울주거포털</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_10.png" alt="">
+                    <span>공약&매니페스토</span>
+                </a>
+                <a href="#">
+                    <img src="./images/icon_service/icon_set_service_11.png" alt="">
+                    <span>시의회</span>
+                </a>
+            </div>
+        </section>
+        <!-- 3행배너 -->
+            <div class="second">
+                <div class="one">
+                    <a href="#"><img src="./images/banner_03.jpg" alt="">서울시민 누구나<br>코로나19 선제검사 신청</a>
+                </div>
+                <div class="two">
+                    <a href="#"><img src="./images/banner_02.jpg" alt="">코로나19신고센터<br>집단감염 위험 준수사항 위반 신고</a>
+                </div>
+                <div class="fhree">
+                    <a href="#"><img src="./images/banner_01.jpg" alt="">한눈에보는<br>코로나19생활경제 지원 정책</a>
+                </div>
+            </div>
+            <div class="third">
+                <div class="1">
+                    <div class="left">
+                        <h1>이벤트신청</h1>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="left_buttom">
+                        <a href="#"><span><em>행정</em> 2020년 상반기 서울시 학자금대출 이자지원 신청합</span></a>
+                        <a href="#"><span><em>환경</em> 2020년 서울국제정원박람회 로고송 UCC 시민공모전</span></a>
+                        <a href="#"><span><em>복지</em> 서울시 건강가정 센터 남성의 육아 3문 3답 공개합니</span></a>
+                        <a href="#"><span><em>주택</em> 2020.9.15 골목길재생 아이디어 공모전 사업을 개최</span></a>
+                        <a href="#"><span><em>문화</em> 2020년 서울지식이음축제포럼 자원활동가를 모집합</span></a>
+                    </div>
+                </div>
+                <div class="2">
+                    <div class="mid">
+                        <h1>이달의 행사 및 축제</h1>
+                        <a href="#">+</a>
+                    </div>
+                    <div class="mid_buttom">
+                        <a href="#"><span><em>환경</em>&lt;식물학자 씨앗, 발견하다&gt; 기획전; 영상으로 만나요</span></a>
+                        <a href="#"><span><em>환경</em> 2020년 서울국제정원박람회 로고송 UCC 시민공모전</span></a>
+                        <a href="#"><span><em>복지</em> 서울시 건강가정 센터 남성의 육아 3문 3답 공개합니</span></a>
+                        <a href="#"><span><em>주택</em> 2020.9.15 골목길재생 아이디어 공모전 사업을 개최</span></a>
+                        <a href="#"><span><em>문화</em> 2020년 서울지식이음축제포럼 자원활동가를 모집합</span></a>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

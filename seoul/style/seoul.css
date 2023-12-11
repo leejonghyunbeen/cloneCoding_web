@@ -1,0 +1,87 @@
+/* heder */
+header {}
+header .first{
+    width: 1151px;height: 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+header .first nav {display: flex;}
+header .first nav a {margin-right: 16px; font-size: 0.875rem;}
+header .first nav a:last-child {margin-right: 0px;}
+header .first nav a img {}
+/* heder-top */
+header .first .mypage {}
+header .first .mypage a {margin-left: 16PX;font-size: 0.875rem;}
+header .first .mypage a:first-child {margin-left: 0PX;}
+/* heder-bottom */
+header .last {
+    width: 1151px; height: 119px; margin: 0 auto;
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    /* h1,search_frm,right 정렬 대상의 부모 flex 대상 */
+    
+
+header .last {}
+header .last h1 {}
+header .last h1 a {}
+header .last h1 a img {}
+header .last #search {}
+header .last #search fieldset {
+    width: 370px; height: 47px; border: 3px solid #1e6cb3;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center ; padding: 0 13px 0 21px;
+} 
+header .last #search fieldset #user_search::placeholder{color: #1e6cb3;}
+header .last #search fieldset #user_search {
+    width:300px ;
+    outline: none;
+}
+header .last #search fieldset #userBtn {width: 24px; height: 24px;}
+header .last #search fieldset #userBtn img {}
+header .last .right {}
+header .last .right #lang {float:right;}
+header .last .right #lang fieldset {}
+header .last .right #lang fieldset select  {
+    background-color: #fff;
+    width: 98px ;
+    height: 28px;
+    margin-right: 7px;
+    border:3px solid #1e6cb3;
+    font-size: 0.8125rem;
+}
+header .last .right #lang fieldset select option {font-size: 0.813rem;}
+header .last .right #lang fieldset .goBtn {
+    background-color:#1e6cb3;
+    color: #fff;
+    width: 28px; height: 28px;
+    font-size: 0.8125rem;
+}
+header .last .weather {clear: both;}
+header .last .weather .current_weather {font-size: 1.5rem;}
+header .last .weather p {
+    font-size:0.8125rem;
+
+}
+/* main행1 */
+/* main행1-banner */
+/* main행1-right (코로나 ,교통정보) */
+/* main행2-주요서비스 */
+/* main행3-배너3 */
+/* main행4-게시판 */
+/* main행4-게시판-이벤트신청 */
+/* main행4-게시판-이달행사축제 */
+/* main행4-게시판-서비스 */
+/* main행5-새소식 */
+/* main행5-새소식 */
+/* footer */
+/* footer-1행 */
+/* footer-2행 */

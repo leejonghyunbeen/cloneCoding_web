@@ -72,7 +72,9 @@
                     <span class="data" title="추가 퇴원">2</span>
                     <span class="data" title="사망">14</span>
                 </a>
-                <a href="#"><img src="./images/banner_traffic.gif" alt="서울시 실시간 교통정보"></a>
+                <div class="traffic">
+                    <a href="#"><img src="./images/banner_traffic.gif" alt="서울시 실시간 교통정보"></a>
+                </div>
             </div>
         </section>
         <!-- 2행 주요서비스 -->
@@ -129,7 +131,15 @@
             </div>
         </section>
         <!-- 3행배너 -->
-            <div class="second">
+        <!-- 정해진 사이트 너비 (1151px) 바깥쪽으로 배경이 존재하는 경우 배경용 div를 따로 제작한다 -->
+        <div class="bnr_bg">
+            <div class="bnr"><!-- 1151px 내용 부모 -->
+                <a href="#"><img src="./images/banner_03.jpg" alt="서울시민 누구나 코로나19선제 검사 신청"></a>
+                <a href="#"><img src="./images/banner_02.jpg" alt="코로나19 신고센터 진단감염 위험 준수사항 위반 신고"></a>
+                <a href="#"><img src="./images/banner_01.jpg" alt="한눈에 보는 코로나19 생활경제 지원정책"></a>
+            </div>
+        </div>
+            <!-- <div class="second">
                 <div class="one">
                     <a href="#"><img src="./images/banner_03.jpg" alt="">서울시민 누구나<br>코로나19 선제검사 신청</a>
                 </div>
@@ -168,7 +178,7 @@
                     </div>
                 </div>
             </div>
-    </main>
+    </main>-->
     <footer>
         <div class="top">
             <div class="menu">
@@ -201,7 +211,7 @@
                 <a href="#"><img src="./images/ft_mark_01.png" alt="ISMS-P"></a>
                 <a href="#"><img src="./images/ft_mark_02.png" alt="과학기술정보통신부WA"></a>
             </div>
-        </div>
+        </div> 
     </footer>
 </body>
 </html>

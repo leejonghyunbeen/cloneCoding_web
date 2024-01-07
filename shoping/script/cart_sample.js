@@ -43,4 +43,12 @@ delevery_info.addEventListener('click',function(){
 delevery_popup_close.addEventListener('click',function(){
     delevery_popup.style.display = 'none';
 })
-
+const delivery_menu_open =item_detail.querySelector('.delivery_menu_open')
+const delivery_menu =item_detail.querySelector('.delivery_menu')
+const delivery_menu_i =item_detail.querySelector('.delivery_menu i[class$=down]')
+console.log(delivery_menu_open,delivery_menu,delivery_menu_i)
+delivery_menu_open.style.display='none';
+delivery_menu.addEventListener('click',function(){
+    delivery_menu_open.style.display ='block';
+    delivery_menu_i.style.transform = 'scale(-1)' 
+})

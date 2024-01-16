@@ -16,20 +16,31 @@ console.log(qr_login_container)
 //초기 일회용 ,qr내용 숨기기
 disposable_login_container.style.display = 'none'
 qr_login_container.style.display = 'none'
+//초기값 ID로그인 활성화 시키기 (active)*클릭전
+login_title[0].parentElement.classList.add('active')
 //1회용 클릭하면 로그인내용x,일회용내용0,qr코드내용x
 login_title[1].addEventListener('click',function(){
     disposable_login_container.style.display = 'block'
     qr_login_container.style.display = 'none'
     id_login_container.style.display='none'
+    login_title[1].parentElement.classList.add('active')
+    login_title[0].parentElement.classList.remove('active')
+    login_title[2].parentElement.classList.remove('active')
 })
 //id로그인 클릭하면 로그인 내용 0, 일회용내용x qr내용x
 login_title[0].addEventListener('click',function(){
     disposable_login_container.style.display = 'none'
     qr_login_container.style.display = 'none'
     id_login_container.style.display='block'
+    login_title[0].parentElement.classList.add('active')
+    login_title[1].parentElement.classList.remove('active')
+    login_title[2].parentElement.classList.remove('active')
 })
 login_title[2].addEventListener('click',function(){
     disposable_login_container.style.display = 'none'
     qr_login_container.style.display = 'block'
     id_login_container.style.display='none'
+    login_title[2].parentElement.classList.add('active')
+    login_title[0].parentElement.classList.remove('active')
+    login_title[1].parentElement.classList.remove('active')
 })

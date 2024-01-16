@@ -21,6 +21,14 @@
     background:url(../images/m_sp.png)0 -166px;
     width: 248px; height: 48px; margin: 0 auto;
 }
+#login_wrap main #loginFrm fieldset .login_title h2:nth-child(1) a > span::before{
+    background-position-y:-194px ;}
+#login_wrap main #loginFrm fieldset .login_title h2:nth-child(2) a > span::before{
+    background-position-y:-62px ;
+}
+#login_wrap main #loginFrm fieldset .login_title h2:nth-child(3) a > em::before{
+    background-position-y:-120px ;
+}
 /* footer */
 #login_wrap footer {padding: 50px 0 30px;}
 #login_wrap footer .f_menu{padding-bottom: 10px;}

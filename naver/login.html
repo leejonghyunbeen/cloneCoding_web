@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/login_js.css"><!-- js호출용 -->
 </head>
 <body>
     <div id="login_wrap">
         <select name="lang_select" id="lang_select">
-            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>  
             <option value="en">ENLISH</option>
         </select>
         <header><h1><a href="#" title="NAVER"><!-- NAVER --></a></h1></header>
@@ -21,7 +22,7 @@
                     <legend class="skip">ID로그인,일회용번호,QR코드양식</legend>
                     <!-- 제목탭 구성 -->
                     <div class="login_title">
-                        <h2 class="active"><a href="#"><span>ID로그인</span></a></h2>
+                        <h2 ><a href="#"><span>ID로그인</span></a></h2>
                         <h2><a href="#"><span>일회용번호</span></a></h2>
                         <h2><a href="#">
                             <em>QR코드</em>
@@ -36,8 +37,8 @@
                         <!-- 내용탭 구성 1. ID 로그인 -->
                         <div class="login_c id_login">
                             <div class="id_pw_input">
-                                <input type="text" placeholder="아이디" id="userId">
-                                <input type="password" placeholder="비밀번호" id="userpW">
+                                <span><input type="text" placeholder="아이디" id="userId"></span>
+                                <span><input type="password" placeholder="비밀번호"  maxlength="16" id="userpW"></span>
                             </div>
                             <div class="id_pw_state">
                                 <div class="login_state">
@@ -53,7 +54,6 @@
                                         </span>
                                     </label>
                                 </div>
-                                <div class="ip_state"></div>
                             </div>
                             <div class="error_message"><!-- JS --></div>
                             <div class="login_btn_wrap">

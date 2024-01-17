@@ -1,7 +1,6 @@
 /* 통합 common css */
 /* all */
 #login_wrap {
-    background: aqua;
     max-width: 743px; position: relative; margin: 0 auto;
 }
 #login_wrap #lang_select{
@@ -29,13 +28,23 @@
 #login_wrap main #loginFrm fieldset .login_title h2:nth-child(3) a > em::before{
     background-position-y:-120px ;
 }
+.search {
+    text-align: center; margin-bottom: 30px;
+}
+.search a {
+    color: #ccc; margin-right: 15px; 
+}
+.search a::after{    
+    content: ''; display: inline-block;  background:#888 ;width: 1px;height: 10px;
+    transform: translate(3px, -1px); margin-left: 10px;} 
+    .search a:last-child::after{display: none;}
 /* footer */
 #login_wrap footer {padding: 50px 0 30px;}
 #login_wrap footer .f_menu{padding-bottom: 10px;}
 #login_wrap footer .f_menu a {color: #888; margin-right: 8px;}
 #login_wrap footer .f_menu a::after {
     content: ''; display: inline-block;  background:#888 ;width: 1px;height: 10px;
-    transform: translate(7px, -1px);
+    transform: translate(7px, -1px); 
 }
 #login_wrap footer .f_menu a:last-child::after{display: none;}
 #login_wrap footer .f_menu a:nth-child(2){font-weight: 700;}

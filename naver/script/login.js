@@ -44,3 +44,46 @@ login_title[2].addEventListener('click',function(){
     login_title[0].parentElement.classList.remove('active')
     login_title[1].parentElement.classList.remove('active')
 })
+// ===================================================
+console.log('로그인 메세지 출력 ================')
+//ID로그인시 틀린 정보 또는 입력되지 않은 정보에 따라 message 출력하기
+//1. 아이디 미입력 후 로그인 버튼 클릭 -> ' 아이디를 입력해주세요'
+//2. 아이디 입력 , 비밀번호 미입력 후 로그인 버튼 클릭 -> '비밀번호를 입력해 주세요'
+//3. 아이디 ,비밀번호 입력 후 로그인 버튼 클릭 시 해당 정보가 맞지 않다면 =>아이디(로그인 전용 아이디)또는 비밀번호를 잘못 입력했습니다 ."입력하신 내용을 확인해주세여."
+//4. 아이디,비번 입력후 로그인 버튼 클릭 시 해당 정보가 맞다면 => 로그인 성공 팝업 "어서오세요 oo님"
+const userIdInput = document.querySelector('#userId')
+const userPwInput = document.querySelector('#userpW')
+const error_message = document.querySelector('.error_message')
+const loginBtn =document.querySelector('#loginBtn')
+console.log(userIdInput,userPwInput,error_message,loginBtn)
+const userList = [{
+    id:'admin',
+    pw:'1234'
+}]
+
+console.log(userIdInput.value)
+console.log(userIdInput.value == '')
+loginBtn.addEventListener('click',()=>{
+    if(userIdInput.value ===''){/* 아이디 빈 문자열 검사 -> 참이라면 */
+        error_message.innerHTML = '아이디를 입력해주세요'/* 참일 때 실행 */
+    }else if(userPwInput.value ===''){
+        error_message.innerHTML = '비밀번호를 입력해주세요'
+    }else if(userIdInput.value == userList[0].id && userPwInput.value == userList[0].pw){
+        alert(' 맞아여!어서오세요') 
+    }else {
+        error_message.innerHTML = '아이디(로그인 전용 아이디)또는 비밀번호를 잘못 입력했습니다 ."입력하신 내용을 확인해주세여'
+        userPwInput.value= ''
+    }
+})
+console.log(userIdInput.value == 'a')
+console.log(userIdInput.value)
+console.log(userList[0])
+const number = document.querySelector('#number')
+const login_btn = document.querySelector('#login_btn')
+const error = document.querySelector('.error')
+console.log(number,login_btn,error)
+login_btn.addEventListener ('click',()=>{
+    if(number.value ===''){
+        error.innerHTML = '번호를 입력해 주겠니? ㅎ'
+    }
+})
